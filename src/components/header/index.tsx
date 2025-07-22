@@ -30,9 +30,9 @@ export function Header() {
           </div>
 
           <nav className={styles.nav}>
-            <Link href="/">Home</Link>
-            <Link href="/#servicos">Serviços</Link>
-            <Link href="/#contatos">Contato</Link>
+            <Link href="/">HOME</Link>
+            <Link href="/#servicos">SERVIÇOS</Link>
+            <Link href="/#contatos">CONTATO</Link>
           </nav>
         </div>
       </div>

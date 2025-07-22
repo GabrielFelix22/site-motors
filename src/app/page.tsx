@@ -1,38 +1,13 @@
-export default function Home() {
+import { Submenu } from '@/components/home/submenu';
+import { getDataHome } from '@/utils/actions/get-data';
+import { HomeProps } from '@/utils/home.type';
+
+export default async function Home() {
+  const { object }: HomeProps = await getDataHome();
+
   return (
     <main>
-      <div
-        style={{
-          width: '100%',
-          height: 600,
-          backgroundColor: '#121212',
-          marginBottom: 24,
-        }}
-      >
-        <h1>Teste página</h1>
-      </div>
-
-      <div
-        style={{
-          width: '100%',
-          height: 600,
-          backgroundColor: '#00ff',
-          marginBottom: 24,
-        }}
-      >
-        <h1>Teste página</h1>
-      </div>
-
-      <div
-        style={{
-          width: '100%',
-          height: 600,
-          backgroundColor: '#00ff00',
-          marginBottom: 24,
-        }}
-      >
-        <h1>Teste página</h1>
-      </div>
+      <Submenu />
     </main>
   );
 }
